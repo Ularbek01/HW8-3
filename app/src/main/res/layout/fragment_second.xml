@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="17dp"
+        android:text="Details"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:elevation="6dp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="294dp"
+        android:layout_height="562dp"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape"
+        tools:ignore="UselessParent"
+        app:layout_constraintTop_toBottomOf="@id/details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imv_big_photo"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="360dp"
+            android:src="@drawable/img5"
+            app:shapeAppearanceOverlay="@style/bigCornerImageView"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/tv_big_is_alive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="Alive"
+            android:textSize="22sp"
+            android:textColor="#6E798C"
+            />
+
+        <TextView
+            android:id="@+id/tv_big_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Rick Sanchez"
+            android:textSize="32sp"
+            android:textColor="@color/black"
+            />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
